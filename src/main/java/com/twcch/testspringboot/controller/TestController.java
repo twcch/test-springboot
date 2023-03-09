@@ -21,9 +21,9 @@ public class TestController {
      * @RequestMapping 用於方法
      * @RequestMapping: 將方法標示為處理外部請求
      */
-    @RequestMapping("/helloworld")
-    public String helloworld() {
-        return "Hello World!";
+    @RequestMapping("/hello")
+    public String hello() {
+        return "Hello!";
     }
 
     /*
@@ -32,10 +32,11 @@ public class TestController {
      * @RequestMapping(value = "url", method = RequestMethod.POST)
      * @RequestMapping(value = "url", method = RequestMethod.PUT)
      * @RequestMapping(value = "url", method = RequestMethod.DELETE)
+     * 如果沒有限制 method 表示所有的請求都支持
      */
-    @RequestMapping(value = "/testspringboot/v2/helloworld", method = RequestMethod.GET)
-    public String helloworld2() {
-        return "Hello World2!";
+    @RequestMapping(value = "/hi", method = RequestMethod.GET)
+    public String hi() {
+        return "Hi!";
     }
 
 }
