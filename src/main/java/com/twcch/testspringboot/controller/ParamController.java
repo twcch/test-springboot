@@ -2,7 +2,9 @@ package com.twcch.testspringboot.controller;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -37,10 +39,11 @@ public class ParamController {
     @PostMapping("/postbook")
     /*
      * @RequestParam 接收前端傳的參數
+     * @RequestParam(varName) 接收前端傳的參數，有指定變數名稱，順序就可以不一樣
      */
-    public Object postBook(@RequestParam String name,
-                           @RequestParam String author,
-                           @RequestParam String isbn) {
+    public Object postBook(@RequestParam("name") String name,
+                           @RequestParam("author") String author,
+                           @RequestParam("isbn") String isbn) {
 
         System.out.println(" --- name: " + name);
         System.out.println(" --- author: " + author);
@@ -52,6 +55,36 @@ public class ParamController {
         book.put("isbn", isbn);
 
         return book;
+    }
+
+    @GetMapping("/books")
+    /*
+     * @RequestParam(varName) 接收前端傳的參數，有指定變數名稱，順序就可以不一樣，強制一定要給
+     * @RequestParam(value = varName, defaultValue = varName) 接收前端傳的參數，沒有強制一定要給，當沒有給會有預設值
+     */
+    public Object getBookList(@RequestParam(value = "page", defaultValue = "10") int page,
+                              @RequestParam("size") int size) {
+
+        Map<String, Object> book = new HashMap<>();
+        book.put("name", "互聯網世界觀");
+        book.put("isbn", "9877234623432");
+        book.put("author", "Alan");
+
+        Map<String, Object> book2 = new HashMap<>();
+        book.put("name", "哈利波特");
+        book.put("isbn", "9877234123456");
+        book.put("author", "Judy");
+
+        List<Map> contents = new ArrayList<>();
+        contents.add(book);
+        contents.add(book2);
+
+        Map<String, Object> pagemap = new HashMap<>();
+        pagemap.put("page", page);
+        pagemap.put("size", size);
+        pagemap.put("contents", contents);
+
+        return pagemap;
     }
 
 }
