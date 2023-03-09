@@ -1,8 +1,6 @@
 package com.twcch.testspringboot.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /*
  * @RestController: 將 class 標示為外部控制器
@@ -34,8 +32,20 @@ public class TestController {
      * @RequestMapping(value = "url", method = RequestMethod.DELETE)
      * 如果沒有限制 method 表示所有的請求都支持
      */
-    @RequestMapping(value = "/hi", method = RequestMethod.GET)
-    public String hi() {
+    @RequestMapping(value = "/gethello", method = RequestMethod.GET)
+    public String getHello() {
+        return "Hi!";
+    }
+
+    /*
+     * @RequestMapping 的簡寫形式
+     * @GetMapping("url")
+     * @PostMapping("url")
+     * @PutMapping("url")
+     * @DeleteMapping("url")
+     */
+    @GetMapping("/sgethello")
+    public String sGetHello() {
         return "Hi!";
     }
 
