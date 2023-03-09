@@ -3,10 +3,6 @@ package com.twcch.testspringboot.controller;
 import org.springframework.web.bind.annotation.*;
 
 /*
- * @Controller:
- * 方法下的 return 如果是一個 String 就會 return(映射) 一個模板
- */
-/*
  * @RestController:
  * 主要用於更加快速的建構 RESTful Web 服務
  * 將 class 標示為外部控制器
