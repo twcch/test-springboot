@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * 方法下的 return 如果是一個 String 就會 return(映射) 一個模板
  */
 @Controller
-@RequestMapping("/testcontroller/v1/")
+@RequestMapping("/test/v1/2")
 public class TestController {
 
     /*

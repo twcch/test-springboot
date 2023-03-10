@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/param/v1/")
-public class ParamController {
+@RequestMapping("/test/v1/3")
+public class TestParamController {
 
     /*
      * 獲取一條書單
