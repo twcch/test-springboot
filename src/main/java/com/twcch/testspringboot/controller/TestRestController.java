@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
  * @RequestMapping 用於 class
  * url rule: http://localhost:8080/api/version/name
  */
-@RequestMapping("/test/v1/1")
+@RequestMapping("/test/v1/rest")
 public class TestRestController {
 
     /*

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/test/v1/3")
+@RequestMapping("/test/v1/param")
 public class TestParamController {
 
     /*
