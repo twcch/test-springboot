@@ -17,7 +17,7 @@ public class TestIOCController {
      * @Qualifier(name) 可以指定注入特定名稱的 bean
      */
     @Autowired
-    @Qualifier("hpPrinterServiceImpl")
+    @Qualifier("hp")
     private PrinterService printer;
 
     @GetMapping("/print")
