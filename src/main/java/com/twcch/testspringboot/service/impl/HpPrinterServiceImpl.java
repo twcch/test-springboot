@@ -1,6 +1,7 @@
 package com.twcch.testspringboot.service.impl;
 
 import com.twcch.testspringboot.service.PrinterService;
+import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
 
 /*
@@ -11,9 +12,23 @@ import org.springframework.stereotype.Component;
 @Component
 public class HpPrinterServiceImpl implements PrinterService {
 
+    private int count;
+
+    /*
+     * @PostConstruct: 當 bean 被注入後，就會執行初始化內容
+     * 存取權限修飾子必須為 public 且為 void
+     * 方法名稱沒有限定，但必須無傳入值
+     */
+    @PostConstruct
+    public void initialize() {
+        count = 10;
+    }
+
     @Override
     public void print(String message) {
+        count--;
         System.out.println("HP Printer: " + message);
+        System.out.println("剩餘使用次數: " + count);
     }
 
 }
