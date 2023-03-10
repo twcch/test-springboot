@@ -1,6 +1,7 @@
 package com.twcch.testspringboot.configuration;
 
 import com.twcch.testspringboot.service.PrinterService;
+import com.twcch.testspringboot.service.impl.CanonPrinterServiceImpl;
 import com.twcch.testspringboot.service.impl.HpPrinterServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,8 +17,13 @@ public class MyConfiguration {
      * 有代入 name 可以替 bean 命名，若無則為預設
      */
     @Bean("hp")
-    public PrinterService myPrinter() {
+    public PrinterService hpPrinter() {
         return new HpPrinterServiceImpl();
+    }
+
+    @Bean("canon")
+    public PrinterService canonPrinter() {
+        return new CanonPrinterServiceImpl();
     }
 
 }
