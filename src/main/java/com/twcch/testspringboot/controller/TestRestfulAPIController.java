@@ -4,6 +4,9 @@ import com.twcch.testspringboot.model.Student;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
+/*
+ * @Validated: 使用 spring boot 驗證請求參數功能，讓 controller 使用驗證註解
+ */
 @RestController
 @RequestMapping("/test/v1/restful")
 public class TestRestfulAPIController {
@@ -16,7 +19,7 @@ public class TestRestfulAPIController {
      */
 
     /*
-     * @Valid: 使用 spring boot 驗證請求參數功能
+     * @Valid: 使用 spring boot 驗證請求參數功能，@RequestBody 的註解
      */
     @PostMapping("/students")
     public String create(@RequestBody @Valid Student student) {
