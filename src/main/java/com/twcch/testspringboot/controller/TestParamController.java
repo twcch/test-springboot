@@ -96,10 +96,24 @@ public class TestParamController {
     }
 
     @PostMapping("/student")
+    /*
+     * @RequestBody: 獲取 body 的資訊
+     */
     public String postInfo(@RequestBody Student student) {
 
         System.out.println("id: " + student.getId());
         System.out.println("name: " + student.getName());
+
+        return "Hello";
+    }
+
+    @RequestMapping("/head")
+    /*
+     * @RequestHeader: 獲取 header 的資訊
+     */
+    public String getHeader(@RequestHeader String info) {
+
+        System.out.println("info: " + info);
 
         return "Hello";
     }
