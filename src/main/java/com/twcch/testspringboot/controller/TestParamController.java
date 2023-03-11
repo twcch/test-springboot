@@ -87,4 +87,11 @@ public class TestParamController {
         return pagemap;
     }
 
+    @GetMapping("/user")
+    public String getInfo(@RequestParam(value = "name", defaultValue = "null") String name,
+                          @RequestParam(value = "age", defaultValue = "0") int age) {
+
+        return "My name is " + name + ", I'm " + age + " years old.";
+    }
+
 }
