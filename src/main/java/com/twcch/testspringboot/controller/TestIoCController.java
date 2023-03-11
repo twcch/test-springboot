@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/test/v1/ioc")
-public class TestIOCController {
+public class TestIoCController {
 
     /*
+     * IoC: inversion of control
      * DI: dependency injection (依賴注入)
      * @Autowired 查看 PrinterService 是否有 printer 的 bean ，若有會將 bean 注入
      * @Qualifier(name) 可以指定注入特定名稱的 bean
