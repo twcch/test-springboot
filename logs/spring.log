@@ -335,3 +335,154 @@ Action:
 
 Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
+2023-03-11T20:23:05.108+08:00  INFO 18148 --- [main] c.t.t.TestSpringbootApplication          : Starting TestSpringbootApplication using Java 19 with PID 18148 (D:\Develop\SourceCode\IdeaProjects\test-springboot\target\classes started by twcch in D:\Develop\SourceCode\IdeaProjects\test-springboot)
+2023-03-11T20:23:05.111+08:00 DEBUG 18148 --- [main] c.t.t.TestSpringbootApplication          : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-11T20:23:05.112+08:00  INFO 18148 --- [main] c.t.t.TestSpringbootApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-03-11T20:23:06.556+08:00  INFO 18148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11T20:23:06.574+08:00  INFO 18148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11T20:23:06.575+08:00  INFO 18148 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-11T20:23:06.688+08:00  INFO 18148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11T20:23:06.689+08:00  INFO 18148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1497 ms
+2023-03-11T20:23:07.137+08:00  WARN 18148 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-03-11T20:23:07.196+08:00  WARN 18148 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-03-11T20:23:07.200+08:00  INFO 18148 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-11T20:23:07.216+08:00  INFO 18148 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-03-11T20:23:07.236+08:00 ERROR 18148 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-03-11T20:24:58.446+08:00  INFO 15272 --- [main] c.t.t.TestSpringbootApplication          : Starting TestSpringbootApplication using Java 19 with PID 15272 (D:\Develop\SourceCode\IdeaProjects\test-springboot\target\classes started by twcch in D:\Develop\SourceCode\IdeaProjects\test-springboot)
+2023-03-11T20:24:58.450+08:00 DEBUG 15272 --- [main] c.t.t.TestSpringbootApplication          : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-11T20:24:58.452+08:00  INFO 15272 --- [main] c.t.t.TestSpringbootApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-03-11T20:24:59.893+08:00  INFO 15272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11T20:24:59.906+08:00  INFO 15272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11T20:24:59.907+08:00  INFO 15272 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-11T20:25:00.012+08:00  INFO 15272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11T20:25:00.013+08:00  INFO 15272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1485 ms
+2023-03-11T20:25:00.510+08:00  WARN 15272 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-03-11T20:25:00.595+08:00  INFO 15272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-11T20:25:00.605+08:00  INFO 15272 --- [main] c.t.t.TestSpringbootApplication          : Started TestSpringbootApplication in 2.914 seconds (process running for 4.244)
+2023-03-11T20:25:29.704+08:00  INFO 15272 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-11T20:25:29.705+08:00  INFO 15272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-11T20:25:29.707+08:00  INFO 15272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-11T20:47:07.961+08:00  INFO 2956 --- [main] c.t.t.TestSpringbootApplication          : Starting TestSpringbootApplication using Java 19 with PID 2956 (D:\Develop\SourceCode\IdeaProjects\test-springboot\target\classes started by twcch in D:\Develop\SourceCode\IdeaProjects\test-springboot)
+2023-03-11T20:47:07.964+08:00 DEBUG 2956 --- [main] c.t.t.TestSpringbootApplication          : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-11T20:47:07.967+08:00  INFO 2956 --- [main] c.t.t.TestSpringbootApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-03-11T20:47:09.711+08:00  INFO 2956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11T20:47:09.725+08:00  INFO 2956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11T20:47:09.725+08:00  INFO 2956 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-11T20:47:09.840+08:00  INFO 2956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11T20:47:09.840+08:00  INFO 2956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1740 ms
+2023-03-11T20:47:10.375+08:00  WARN 2956 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-03-11T20:47:10.497+08:00  INFO 2956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-11T20:47:10.508+08:00  INFO 2956 --- [main] c.t.t.TestSpringbootApplication          : Started TestSpringbootApplication in 3.388 seconds (process running for 4.74)
+2023-03-11T20:47:26.317+08:00  INFO 2956 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-11T20:47:26.318+08:00  INFO 2956 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-11T20:47:26.319+08:00  INFO 2956 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-11T20:47:26.345+08:00 ERROR 2956 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: test1 error!] with root cause
+
+java.lang.RuntimeException: test1 error!
+	at com.twcch.testspringboot.controller.TestExceptionController.test1(TestExceptionController.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-6.0.6.jar:6.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.6.jar:6.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.6.jar:6.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.6.jar:6.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.6.jar:6.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.6.jar:6.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.6.jar:6.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.6.jar:6.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705) ~[tomcat-embed-core-10.1.5.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.6.jar:6.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814) ~[tomcat-embed-core-10.1.5.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-03-11T20:53:12.605+08:00  INFO 20460 --- [main] c.t.t.TestSpringbootApplication          : Starting TestSpringbootApplication using Java 19 with PID 20460 (D:\Develop\SourceCode\IdeaProjects\test-springboot\target\classes started by twcch in D:\Develop\SourceCode\IdeaProjects\test-springboot)
+2023-03-11T20:53:12.607+08:00 DEBUG 20460 --- [main] c.t.t.TestSpringbootApplication          : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-11T20:53:12.614+08:00  INFO 20460 --- [main] c.t.t.TestSpringbootApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-03-11T20:53:13.722+08:00  INFO 20460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11T20:53:13.739+08:00  INFO 20460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11T20:53:13.741+08:00  INFO 20460 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-11T20:53:13.831+08:00  INFO 20460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11T20:53:13.831+08:00  INFO 20460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1150 ms
+2023-03-11T20:53:14.293+08:00  WARN 20460 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-03-11T20:53:14.402+08:00  INFO 20460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-11T20:53:14.411+08:00  INFO 20460 --- [main] c.t.t.TestSpringbootApplication          : Started TestSpringbootApplication in 2.376 seconds (process running for 3.212)
+2023-03-11T20:53:20.264+08:00  INFO 20460 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-11T20:53:20.264+08:00  INFO 20460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-11T20:53:20.266+08:00  INFO 20460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-11T21:00:06.168+08:00  INFO 15788 --- [main] c.t.t.TestSpringbootApplication          : Starting TestSpringbootApplication using Java 19 with PID 15788 (D:\Develop\SourceCode\IdeaProjects\test-springboot\target\classes started by twcch in D:\Develop\SourceCode\IdeaProjects\test-springboot)
+2023-03-11T21:00:06.170+08:00 DEBUG 15788 --- [main] c.t.t.TestSpringbootApplication          : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-11T21:00:06.171+08:00  INFO 15788 --- [main] c.t.t.TestSpringbootApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-03-11T21:00:07.430+08:00  INFO 15788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11T21:00:07.450+08:00  INFO 15788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11T21:00:07.451+08:00  INFO 15788 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-11T21:00:07.563+08:00  INFO 15788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11T21:00:07.564+08:00  INFO 15788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1335 ms
+2023-03-11T21:00:07.949+08:00  WARN 15788 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-03-11T21:00:08.024+08:00  INFO 15788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-11T21:00:08.033+08:00  INFO 15788 --- [main] c.t.t.TestSpringbootApplication          : Started TestSpringbootApplication in 2.506 seconds (process running for 3.438)
+2023-03-11T21:00:12.651+08:00  INFO 15788 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-11T21:00:12.651+08:00  INFO 15788 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-11T21:00:12.652+08:00  INFO 15788 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-11T21:00:36.987+08:00  INFO 19080 --- [main] c.t.t.TestSpringbootApplication          : Starting TestSpringbootApplication using Java 19 with PID 19080 (D:\Develop\SourceCode\IdeaProjects\test-springboot\target\classes started by twcch in D:\Develop\SourceCode\IdeaProjects\test-springboot)
+2023-03-11T21:00:36.991+08:00 DEBUG 19080 --- [main] c.t.t.TestSpringbootApplication          : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-11T21:00:36.992+08:00  INFO 19080 --- [main] c.t.t.TestSpringbootApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-03-11T21:00:38.400+08:00  INFO 19080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11T21:00:38.418+08:00  INFO 19080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11T21:00:38.419+08:00  INFO 19080 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-11T21:00:38.521+08:00  INFO 19080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11T21:00:38.522+08:00  INFO 19080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1462 ms
+2023-03-11T21:00:38.966+08:00  WARN 19080 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-03-11T21:00:39.059+08:00  INFO 19080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-11T21:00:39.068+08:00  INFO 19080 --- [main] c.t.t.TestSpringbootApplication          : Started TestSpringbootApplication in 2.686 seconds (process running for 3.52)
+2023-03-11T21:00:42.525+08:00  INFO 19080 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-11T21:00:42.525+08:00  INFO 19080 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-11T21:00:42.526+08:00  INFO 19080 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
