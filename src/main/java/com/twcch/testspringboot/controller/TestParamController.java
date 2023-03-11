@@ -1,5 +1,6 @@
 package com.twcch.testspringboot.controller;
 
+import com.twcch.testspringboot.model.Student;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -92,6 +93,15 @@ public class TestParamController {
                           @RequestParam(value = "age", defaultValue = "0") int age) {
 
         return "My name is " + name + ", I'm " + age + " years old.";
+    }
+
+    @PostMapping("/student")
+    public String postInfo(@RequestBody Student student) {
+
+        System.out.println("id: " + student.getId());
+        System.out.println("name: " + student.getName());
+
+        return "Hello";
     }
 
 }
