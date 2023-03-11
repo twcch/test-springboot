@@ -1,6 +1,11 @@
 package com.twcch.testspringboot.controller;
 
+import com.twcch.testspringboot.model.Store;
+import com.twcch.testspringboot.model.User;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /*
  * Http Request:
@@ -50,8 +55,13 @@ public class TestRestController {
      * 如果沒有限制 method 表示所有的請求都支持
      */
     @RequestMapping(value = "/gethello", method = RequestMethod.GET)
-    public String getHello() {
-        return "Hi!";
+    public Store getHello() {
+        Store store = new Store();
+        List<String> list = new ArrayList<>();
+        list.add("蘋果");
+        list.add("西瓜");
+        store.setProductList(list);
+        return store;
     }
 
     /*
@@ -62,8 +72,10 @@ public class TestRestController {
      * @DeleteMapping("url")
      */
     @GetMapping("/sgethello")
-    public String sGetHello() {
-        return "Hi!";
+    public User sGetHello() {
+        User user = new User();
+        user.setName("Amy");
+        return user; // Spring boot 使用 jackson library 轉換 java class 和 json 格式
     }
 
 }
