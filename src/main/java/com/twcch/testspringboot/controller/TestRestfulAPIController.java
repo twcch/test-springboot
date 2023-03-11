@@ -2,6 +2,8 @@ package com.twcch.testspringboot.controller;
 
 import com.twcch.testspringboot.model.Student;
 import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 /*
@@ -22,8 +24,8 @@ public class TestRestfulAPIController {
      * @Valid: 使用 spring boot 驗證請求參數功能，@RequestBody 的註解
      */
     @PostMapping("/students")
-    public String create(@RequestBody @Valid Student student) {
-        return "執行資料庫 create 操作";
+    public ResponseEntity<String> create(@RequestBody @Valid Student student) {
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body("執行資料庫 create 操作");
     }
 
     @GetMapping("/students/{studentId}")

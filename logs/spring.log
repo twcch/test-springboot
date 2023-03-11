@@ -240,3 +240,98 @@
 2023-03-11T19:34:25.645+08:00  INFO 18340 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-03-11T19:34:25.646+08:00  INFO 18340 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2023-03-11T19:34:25.801+08:00  WARN 18340 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.twcch.testspringboot.controller.TestRestfulAPIController.create(com.twcch.testspringboot.model.Student): [Field error in object 'student' on field 'id': rejected value [null]; codes [NotNull.student.id,NotNull.id,NotNull.int,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [student.id,id]; arguments []; default message [id]]; default message [不得是空值]] ]
+2023-03-11T20:18:49.819+08:00  INFO 17844 --- [main] c.t.t.TestSpringbootApplication          : Starting TestSpringbootApplication using Java 19 with PID 17844 (D:\Develop\SourceCode\IdeaProjects\test-springboot\target\classes started by twcch in D:\Develop\SourceCode\IdeaProjects\test-springboot)
+2023-03-11T20:18:49.824+08:00 DEBUG 17844 --- [main] c.t.t.TestSpringbootApplication          : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-11T20:18:49.826+08:00  INFO 17844 --- [main] c.t.t.TestSpringbootApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-03-11T20:18:51.431+08:00  INFO 17844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11T20:18:51.445+08:00  INFO 17844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11T20:18:51.445+08:00  INFO 17844 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-11T20:18:51.539+08:00  INFO 17844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11T20:18:51.539+08:00  INFO 17844 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1626 ms
+2023-03-11T20:18:52.000+08:00  WARN 17844 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-03-11T20:18:52.078+08:00  INFO 17844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-11T20:18:52.087+08:00  INFO 17844 --- [main] c.t.t.TestSpringbootApplication          : Started TestSpringbootApplication in 3.232 seconds (process running for 4.596)
+2023-03-11T20:20:36.611+08:00  INFO 18092 --- [main] c.t.t.TestSpringbootApplication          : Starting TestSpringbootApplication using Java 19 with PID 18092 (D:\Develop\SourceCode\IdeaProjects\test-springboot\target\classes started by twcch in D:\Develop\SourceCode\IdeaProjects\test-springboot)
+2023-03-11T20:20:36.614+08:00 DEBUG 18092 --- [main] c.t.t.TestSpringbootApplication          : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-11T20:20:36.616+08:00  INFO 18092 --- [main] c.t.t.TestSpringbootApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-03-11T20:20:38.021+08:00  INFO 18092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11T20:20:38.034+08:00  INFO 18092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11T20:20:38.039+08:00  INFO 18092 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-11T20:20:38.141+08:00  INFO 18092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11T20:20:38.142+08:00  INFO 18092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1427 ms
+2023-03-11T20:20:38.733+08:00  WARN 18092 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-03-11T20:20:38.858+08:00  WARN 18092 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-03-11T20:20:38.863+08:00  INFO 18092 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-11T20:20:38.888+08:00  INFO 18092 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-03-11T20:20:38.910+08:00 ERROR 18092 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-03-11T20:21:07.965+08:00  INFO 2876 --- [main] c.t.t.TestSpringbootApplication          : Starting TestSpringbootApplication using Java 19 with PID 2876 (D:\Develop\SourceCode\IdeaProjects\test-springboot\target\classes started by twcch in D:\Develop\SourceCode\IdeaProjects\test-springboot)
+2023-03-11T20:21:07.968+08:00 DEBUG 2876 --- [main] c.t.t.TestSpringbootApplication          : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-11T20:21:07.970+08:00  INFO 2876 --- [main] c.t.t.TestSpringbootApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-03-11T20:21:09.388+08:00  INFO 2876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11T20:21:09.400+08:00  INFO 2876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11T20:21:09.400+08:00  INFO 2876 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-11T20:21:09.508+08:00  INFO 2876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11T20:21:09.508+08:00  INFO 2876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1457 ms
+2023-03-11T20:21:09.955+08:00  WARN 2876 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-03-11T20:21:10.024+08:00  WARN 2876 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-03-11T20:21:10.028+08:00  INFO 2876 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-11T20:21:10.044+08:00  INFO 2876 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-03-11T20:21:10.065+08:00 ERROR 2876 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-03-11T20:21:26.450+08:00  INFO 10088 --- [main] c.t.t.TestSpringbootApplication          : Starting TestSpringbootApplication using Java 19 with PID 10088 (D:\Develop\SourceCode\IdeaProjects\test-springboot\target\classes started by twcch in D:\Develop\SourceCode\IdeaProjects\test-springboot)
+2023-03-11T20:21:26.454+08:00 DEBUG 10088 --- [main] c.t.t.TestSpringbootApplication          : Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-11T20:21:26.455+08:00  INFO 10088 --- [main] c.t.t.TestSpringbootApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-03-11T20:21:28.007+08:00  INFO 10088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-11T20:21:28.024+08:00  INFO 10088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-11T20:21:28.025+08:00  INFO 10088 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-11T20:21:28.171+08:00  INFO 10088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-11T20:21:28.171+08:00  INFO 10088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1624 ms
+2023-03-11T20:21:28.674+08:00  WARN 10088 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-03-11T20:21:28.762+08:00  WARN 10088 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-03-11T20:21:28.767+08:00  INFO 10088 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-11T20:21:28.783+08:00  INFO 10088 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-03-11T20:21:28.804+08:00 ERROR 10088 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
