@@ -110,6 +110,8 @@ public class TestParamController {
     @RequestMapping("/head")
     /*
      * @RequestHeader: 獲取 header 的資訊
+     * @RequestHeader(required = false): true 必須為 header 的 request
+     * @RequestHeader(defaultValue = "application/json"): 提供預設值
      */
     public String getHeader(@RequestHeader String info) {
 
