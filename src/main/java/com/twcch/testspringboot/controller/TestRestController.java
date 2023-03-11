@@ -1,7 +1,21 @@
 package com.twcch.testspringboot.controller;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
+
+/*
+ * Http Request:
+ * http method: GET, POST, PUT, DELETE
+ * url
+ * request header: 放一些通用的資訊
+ * request body: 放請求參數(只有在使用 POST 和 PUT 時才能使用)
+ */
+
+/*
+ * Http Response:
+ * http status code: 表示請求結果(1xx: 資訊, 2xx: 成功, 3xx: 重新導向, 4xx: 前端請求錯, 5xx: 後端處理有問題)
+ * response header: 放一些通用的資訊
+ * response body: 放後端返回的資訊
+ */
 
 /*
  * @RestController:
