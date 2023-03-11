@@ -1,6 +1,7 @@
 package com.twcch.testspringboot.controller;
 
 import com.twcch.testspringboot.model.Student;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -14,8 +15,11 @@ public class TestRestfulAPIController {
      * 資料庫操作: Delete, Http method: DELETE, 刪除一個資源
      */
 
+    /*
+     * @Valid: 使用 spring boot 驗證請求參數功能
+     */
     @PostMapping("/students")
-    public String create(@RequestBody Student student) {
+    public String create(@RequestBody @Valid Student student) {
         return "執行資料庫 create 操作";
     }
 
