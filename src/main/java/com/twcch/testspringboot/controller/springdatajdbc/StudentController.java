@@ -104,7 +104,11 @@ public class StudentController {
         // query 方法固定 return list
         List<Student> list = namedParameterJdbcTemplate.query(sql, map, new StudentRowMapper());
 
-        return list.get(0);
+        if (list.size() > 0) {
+            return list.get(0);
+        } else {
+            return null;
+        }
 
     }
 
