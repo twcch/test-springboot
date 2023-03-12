@@ -1,6 +1,7 @@
 package com.twcch.testspringboot.controller.springdatajdbc;
 
 import com.twcch.testspringboot.model.Student;
+import com.twcch.testspringboot.rowmapper.StudentRowMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -77,6 +78,19 @@ public class StudentController {
         namedParameterJdbcTemplate.update(sql, map);
 
         return "執行 DELETE SQL";
+    }
+
+    @GetMapping("/students")
+    public List<Student> select() {
+
+        String sql = "SELECT id, name FROM student";
+
+        Map<String,Object> map = new HashMap<>();
+
+        List<Student> list = namedParameterJdbcTemplate.query(sql, map, new StudentRowMapper());
+
+        return list;
+
     }
 
 }
