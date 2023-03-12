@@ -17,7 +17,7 @@ public class Student {
     /*
      * @NotNull: 使用 spring boot 驗證請求參數功能，限制不可傳入 null
      */
-    @NotNull
+    // @NotNull
     private Integer id;
     @NotBlank
     private String name;
