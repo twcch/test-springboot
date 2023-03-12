@@ -93,4 +93,19 @@ public class StudentController {
 
     }
 
+    @GetMapping("/students/{studentId}")
+    public Student selectOne(@PathVariable Integer studentId) {
+
+        String sql = "SELECT id, name FROM student WHERE id = :studentId";
+
+        Map<String, Object> map =new HashMap<>();
+        map.put("studentId", studentId);
+
+        // query 方法固定 return list
+        List<Student> list = namedParameterJdbcTemplate.query(sql, map, new StudentRowMapper());
+
+        return list.get(0);
+
+    }
+
 }
